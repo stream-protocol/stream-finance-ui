@@ -4,7 +4,7 @@
     <div
       style="
         height: 1px;
-        background: linear-gradient(90deg, rgba(90, 196, 190, 0) 0%, #22252b 50%, rgba(194, 0, 251, 0) 100%);
+        background: linear-gradient(90deg, rgba(90, 196, 190, 0) 0%, #656e81 50%, rgba(194, 0, 251, 0) 100%);
       "
     />
     <Foot />
@@ -13,7 +13,6 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-
 @Component({})
 export default class Single extends Vue {}
 </script>
