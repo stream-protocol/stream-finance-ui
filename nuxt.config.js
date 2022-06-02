@@ -17,7 +17,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'CropperFinance',
+    title: 'Stream Protocol',
     htmlAttrs: {
       lang: 'en'
     },
@@ -34,7 +34,7 @@ export default {
 
   loadingIndicator: {
     name: 'circle',
-    color: '#5ac4be',
+    color: '#707a8f',
     background: '#000'
   },
 
