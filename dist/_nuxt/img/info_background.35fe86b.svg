@@ -5,7 +5,7 @@
 </g>
 <g filter="url(#filter1_b)">
 <path d="M863 716.75L878.993 726L895 716.75V698.25L878.993 689L863 698.25V716.75Z" fill="url(#paint2_radial)" fill-opacity="0.2"/>
-<path d="M862.5 716.75V717.038L862.75 717.183L878.743 726.433L878.993 726.578L879.244 726.433L895.25 717.183L895.5 717.039V716.75V698.25V697.961L895.25 697.817L879.244 688.567L878.993 688.422L878.743 688.567L862.75 697.817L862.5 697.962V698.25V716.75Z" stroke="#3772FF"/>
+<path d="M862.5 716.75V717.038L862.75 717.183L878.743 726.433L878.993 726.578L879.244 726.433L895.25 717.183L895.5 717.039V716.75V698.25V697.961L895.25 697.817L879.244 688.567L878.993 688.422L878.743 688.567L862.75 697.817L862.5 697.962V698.25V716.75Z" stroke="#22252b"/>
 </g>
 <defs>
 <filter id="filter0_b" x="-20" y="-106.152" width="1037" height="746.308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -26,8 +26,8 @@
 </radialGradient>
 <linearGradient id="paint1_linear" x1="850.5" y1="26.1976" x2="95.5795" y2="573.704" gradientUnits="userSpaceOnUse">
 <stop stop-color="#C200FB"/>
-<stop offset="0.619792" stop-color="#3772FF"/>
-<stop offset="1" stop-color="#5AC4BE"/>
+<stop offset="0.619792" stop-color="#22252b"/>
+<stop offset="1" stop-color="#4e5565"/>
 </linearGradient>
 <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(863 689) rotate(49.1446) scale(48.9183 33.6353)">
 <stop stop-color="#4966CF"/>

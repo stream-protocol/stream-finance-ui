@@ -408,7 +408,7 @@ export default Vue.extend({
   },
 
   head: {
-    title: 'CropperFinance Farm'
+    title: 'Stream Protocol Farm'
   },
 
   computed: {
@@ -658,7 +658,7 @@ export default Vue.extend({
           }
 
 
-          (newFarmInfo as any).twitterShare = `http://twitter.com/share?text=Earn ${(newFarmInfo as any).reward.name} with our new farm on @CropperFinance&url=https://cropper.finance/farms/?s=${(newFarmInfo as any).poolId} &hashtags=${(newFarmInfo as any).lp.coin.symbol},${(newFarmInfo as any).lp.pc.symbol},yieldfarming,Solana`
+          (newFarmInfo as any).twitterShare = `http://twitter.com/share?text=Earn ${(newFarmInfo as any).reward.name} with our new farm on @Stream Protocol&url=https://finance.streamprotocol.org/farms/?s=${(newFarmInfo as any).poolId} &hashtags=${(newFarmInfo as any).lp.coin.symbol},${(newFarmInfo as any).lp.pc.symbol},yieldfarming,Solana`
 
 
           if(!isPFO){
@@ -1345,7 +1345,7 @@ export default Vue.extend({
 }
 .farm.container {
   max-width: 1200px;
-  background: #1B2028;
+  background: #646D82;
   margin-top:20px;
   margin-bottom:20px;
 
@@ -1525,7 +1525,7 @@ export default Vue.extend({
   width: 500px;
   margin-top: 30px;
   background-color: transparent;
-  border: 1px solid #85858d;
+  border: 1px solid #22252b;
 
   .anticon-close {
     color: #fff;

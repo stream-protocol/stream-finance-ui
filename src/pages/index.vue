@@ -9,7 +9,7 @@
                     <div class="logo">
                         <img src="../assets/Component2.png"/>
                     </div>
-                    <h2>CropperFinance</h2>
+                    <h2>Stream Protocol</h2>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     <div class="float-left">
                         <div class="grid-reseaux">
                             <div class="reseau">
-                                <a href="https://discord.gg/CropperFinance" target="_blank">
+                                <a href="https://discord.gg/Stream Protocol" target="_blank">
                                     <img src="../assets/Discord_black.png"/>
                                 </a>
                             </div>
@@ -41,12 +41,12 @@
                                 </a>
                             </div>
                             <div class="reseau">
-                                <a href="https://t.me/CropperFinance" target="_blank">
+                                <a href="https://t.me/Stream Protocol" target="_blank">
                                     <img src="../assets/Telegram_black.png"/>
                                 </a>
                             </div>
                             <div class="reseau">
-                                <a href="https://twitter.com/CropperFinance" target="_blank">
+                                <a href="https://twitter.com/Stream Protocol" target="_blank">
                                     <img src="../assets/Twitter_black.png"/>
                                 </a>
                             </div>
@@ -64,7 +64,7 @@
                 <div class="container-2">
                     <div class="title-section-left-c4">
                         <img src="../assets/Component2.png"/>
-                        <h2>CRP Token</h2>
+                        <h2>STR Token</h2>
                         <div class="line-from-left">
                         </div>
                     </div>
@@ -76,27 +76,27 @@
                     <div class="grid-item-1">
                         <div class="item-1">
                             <h3>Farm creation</h3>
-                            <p>$CRP will be essential for paying<br />
+                            <p>$STR will be essential for paying<br />
                                 the fee to launch farms in USDC pairs.</p>
                         </div>
                     </div>
                     <div class="grid-item-2">
                         <div class="item-2">
-                            <h3>$CRP Token</h3>
-                            <p>Our platform will be fuelled by CRP,<br />
+                            <h3>$STR Token</h3>
+                            <p>Our platform will be fuelled by STR,<br />
                                 it's native token.</p>
                         </div>
                     </div>
                     <div class="grid-item-3">
                         <div class="item-3">
                             <h3>Liquidity provision</h3>
-                            <p>$CRP will be required for providing liquidity to $CRP-[SPL-Token] pairs and getting additional yield.</p>
+                            <p>$STR will be required for providing liquidity to $STR-[SPL-Token] pairs and getting additional yield.</p>
                         </div>
                     </div>
                     <div class="grid-item-4">
                         <div class="item-4">
                             <h3>Fee collection</h3>
-                            <p>Liquidity providers of the [CRP]-[USDC] farm will receive, in addition to the farming emissions, 50% of the fees collected.</p>
+                            <p>Liquidity providers of the [STR]-[USDC] farm will receive, in addition to the farming emissions, 50% of the fees collected.</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ in a few clicks
                                 <img src="../assets/sun.png"/>A place conceived, designed,<br />
                                 and developed for farmers</h2>
                             <p>
-                                CropperFinance aims to provide best
+                                Stream Protocol aims to provide best
                                 yields in the <br />ecosystem.
                                 Made by farmers, for farmers.
                             </p>
@@ -338,7 +338,7 @@ Croppish. </p>
             <div
       style="
         height: 1px;
-        background: linear-gradient(90deg, rgba(90, 196, 190, 0) 0%, #3772ff 50%, rgba(194, 0, 251, 0) 100%);
+        background: linear-gradient(90deg, rgba(90, 196, 190, 0) 0%, #22252b 50%, rgba(194, 0, 251, 0) 100%);
       "
     />
             <nav>
@@ -362,14 +362,14 @@ Croppish. </p>
                 </div>
                 <div class="logoname">
                     <img src="../assets/Component2.png"/>
-                    <h2>CropperFinance</h2>
+                    <h2>Stream Protocol</h2>
                 </div>
                 <div class="visible">
                     <p>Decentralized 2021</p>
                 </div>
                 <div class="grid-reseaux-footer">
                     <div>
-                        <a href="https://discord.gg/CropperFinance" target="_blank">
+                        <a href="https://discord.gg/Stream Protocol" target="_blank">
                             <img src="../assets/Discord_black.png"/>
                         </a>
                     </div>
@@ -379,12 +379,12 @@ Croppish. </p>
                         </a>
                     </div>
                     <div>
-                        <a href="https://t.me/CropperFinance" target="_blank">
+                        <a href="https://t.me/Stream Protocol" target="_blank">
                             <img src="../assets/Telegram_black.png"/>
                         </a>
                     </div>
                     <div>
-                        <a href="https://twitter.com/CropperFinance" target="_blank">
+                        <a href="https://twitter.com/Stream Protocol" target="_blank">
                             <img src="../assets/Twitter_black.png"/>
                         </a>
                     </div>

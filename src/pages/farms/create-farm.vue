@@ -88,7 +88,7 @@
         <Row v-if="current === 0 && wallet.connected" style="align-items: baseline; line-height: 40px; padding-bottom: 20px">
           <Col style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'"
             ><div style="padding-bottom: 10px; word-break: break-word">
-              Here are two options. You can use existing CropperFinance AMM ID to create your own farm or create new AMM ID
+              Here are two options. You can use existing Stream Protocol AMM ID to create your own farm or create new AMM ID
             </div>
             <br />
             <div><b>Option 1 - Select token pairing or input Amm Id:</b></div>
@@ -170,9 +170,9 @@
               >$$
             </div>
             <div>Input Serum Market ID:</div>
-            <div>CRP/USDC: HPU7v2yCGM6sRujWEMaTPiiiX2qMb6fun3eWjTzSgSw1</div>
-            <div>CRP/USDT: 3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG</div>
-            <div>B2B/CRP: 2hEeVE354k6mpvHvzg8K8HvEAkL9HUMiZbcjarkuy7W7</div>
+            <div>STRM/USDC: 5P3giWpPBrVKL8QP8roKM7NsLdi3ie1Nc2b5r9mGtvwb</div>
+            <div>STRM/USDT: 3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG</div>
+            <div>B2B/STRM: 2hEeVE354k6mpvHvzg8K8HvEAkL9HUMiZbcjarkuy7W7</div>
           </Col>
           <Col style="line-height: 20px" :span="24"><input v-model="inputMarket" :disabled="!marketInputFlag" /></Col>
 
@@ -341,7 +341,7 @@
 
         <!-- Create Farm -->
         <Row v-if="current === 5" style="align-items: baseline; line-height: 40px; padding-bottom: 20px">
-          <Col v-if="!isCRPTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
+          <Col v-if="!isSTRTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
             <div>If you have associated your token with USDC, you will need to pay 5000 USDC to start the farm after it is created</div>
           </Col>
           <Col style="line-height: 20px" :span="24">
@@ -407,7 +407,7 @@
           </Col>
         </Row>
         <Row v-if="current === 6" style="align-items: baseline; line-height: 40px; padding-bottom: 20px">
-          <Col v-if="!isCRPTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
+          <Col v-if="!isSTRTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
             <div>Farm has been successfully created!</div>
           </Col>
           <Col :span="isMobile ? 24 : 24" style="padding-bottom: 20px; padding-top: 10px; text-align:center">
@@ -449,7 +449,7 @@ const Step = Steps.Step
 
 @Component({
   head: {
-    title: 'CropperFinance Create Pool'
+    title: 'Stream Protocol Create Pool'
   },
   components: {
     Steps,
@@ -476,7 +476,7 @@ export default class CreatePool extends Vue {
   startTime: any = moment()
   endTime:  any = moment()
   endOpen: any = false
-  isCRPTokenPair:boolean = false
+  isSTRTokenPair:boolean = false
   ammIdSelectShow:boolean = false
   ammIdSelectList: any = []
 
@@ -919,7 +919,7 @@ export default class CreatePool extends Vue {
     // let market_t = {
     //   address: new PublicKey('9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT'),
     //   baseMintAddress: new PublicKey(TOKENS.B2B.mintAddress),
-    //   quoteMintAddress: new PublicKey(TOKENS.CRP.mintAddress),
+    //   quoteMintAddress: new PublicKey(TOKENS.STR.mintAddress),
     //   tickSize: 5,
     //   minOrderSize: 10
     // }
@@ -947,7 +947,7 @@ export default class CreatePool extends Vue {
     // // let market_info = {
     // //   address: new PublicKey('9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT'),
     // //   baseMintAddress: new PublicKey(TOKENS.USDT.mintAddress),
-    // //   quoteMintAddress: new PublicKey(TOKENS.CRP.mintAddress),
+    // //   quoteMintAddress: new PublicKey(TOKENS.STR.mintAddress),
     // //   ammId: new PublicKey('3gSjs6MqyHFsp8DXvaKvVUJjV7qg5itf9qmUGuhnSaWH')
     // // }
 

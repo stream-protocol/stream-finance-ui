@@ -871,6 +871,6 @@ main{
 }
 
 .ant-steps-item-description {
-  color: #85858d !important;
+  color: #22252b !important;
 }
 </style>

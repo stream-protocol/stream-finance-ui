@@ -177,31 +177,31 @@
             <Col :span="isMobile ? 24 : 12" :class="isMobile ? ' steps' : 'steps'">
 
                 <div class="done" >
-                    <span class="span first"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span class="span first"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                    <div><b class="t">Initialisation</b> - This project is in preparation phase. Stay tuned.</div>
                 </div>
 
                 <div :class="farm.pla_ts < currentTimestamp ? 'done' : 'notdone' " >
                     <span v-if="farm.pla_ts > currentTimestamp">2</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div><b class="t">Withelist</b> - You can now whitelist yourself for the lottery.<br />
                     <div class="date"> {{farm.pla}} </div></div>
                 </div>
                 <div :class="farm.pla_end_ts < currentTimestamp ? 'done' : 'notdone' ">
                     <span v-if="farm.pla_end_ts > currentTimestamp">3</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div><b class="t">Airdrop Lottery</b> - See if you have any winning lottery tickets.<br/>
                     <div class="date"> {{farm.pla_end}} </div></div>
                 </div>
                 <div :class="farm.pfrom_ts < currentTimestamp ? 'done' : 'notdone' ">
                     <span v-if="farm.pfrom_ts > currentTimestamp">4</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span> 
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span> 
                     <div><b class="t">Private Farm</b> - You can now stack LP in {{farm.tokenA.symbol}}-{{farm.tokenB.symbol}} farm.<br/>
                     <div class="date"> {{farm.pfrom}} </div></div>
                 </div>
                 <div :class="farm.pto_ts < currentTimestamp ? 'done' : 'notdone' ">
                     <span v-if="farm.pto_ts > currentTimestamp">5</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div><b class="t">Public Farm</b> - {{farm.tokenA.symbol}}-{{farm.tokenB.symbol}} farm goes public<br/>
                     <div class="date"> {{farm.pto}} </div></div>
                 </div>
@@ -517,7 +517,7 @@ export default Vue.extend({
   },
 
   head: {
-    title: 'CropperFinance x ... '
+    title: 'Stream Protocol x ... '
   },
 
 
@@ -663,9 +663,9 @@ export default Vue.extend({
                 this.followerCount = Object.keys(responseData2).length;
 
 
-                //this.labelizedAmms[element.ammID].twitterShare = `http://twitter.com/share?text=Earn ${this.labelizedAmms[element.ammID].tokenA.symbol} with our new farm on @CropperFinance&url=https://cropper.finance?s=${newFarmInfo.poolId} &hashtags=${this.labelizedAmms[element.ammID].tokenA.symbol},${this.labelizedAmms[element.ammID].tokenB.symbol},yieldfarming,Solana`
+                //this.labelizedAmms[element.ammID].twitterShare = `http://twitter.com/share?text=Earn ${this.labelizedAmms[element.ammID].tokenA.symbol} with our new farm on @Stream Protocol&url=https://finance.streamprotocol.org?s=${newFarmInfo.poolId} &hashtags=${this.labelizedAmms[element.ammID].tokenA.symbol},${this.labelizedAmms[element.ammID].tokenB.symbol},yieldfarming,Solana`
 
-                    document.title = 'Fertilizer - CropperFinance x ' + element.name ;
+                    document.title = 'Fertilizer - Stream Protocol x ' + element.name ;
 
                 this.nbFarmsLoaded++;
               }
@@ -776,7 +776,7 @@ export default Vue.extend({
                   if(query.get('f') && this.labelizedAmms[newFarmInfo.poolId].slug == query.get('f')){
                     isPFO = true;
 
-                     newFarmInfo.twitterShare = `http://twitter.com/share?text=Earn ${newFarmInfo.reward.name} with our new farm on @CropperFinance&url=https://cropper.finance?s=${newFarmInfo.poolId} &hashtags=${newFarmInfo.lp.coin.symbol},${newFarmInfo.lp.pc.symbol},yieldfarming,Solana`
+                     newFarmInfo.twitterShare = `http://twitter.com/share?text=Earn ${newFarmInfo.reward.name} with our new farm on @Stream Protocol&url=https://finance.streamprotocol.org?s=${newFarmInfo.poolId} &hashtags=${newFarmInfo.lp.coin.symbol},${newFarmInfo.lp.pc.symbol},yieldfarming,Solana`
 
 
                     farms.push({
@@ -785,7 +785,7 @@ export default Vue.extend({
                       farmInfo: newFarmInfo
                     })
 
-                    document.title = 'Fertilizer - CropperFinance x ' + this.labelizedAmms[newFarmInfo.poolId].name ;
+                    document.title = 'Fertilizer - Stream Protocol x ' + this.labelizedAmms[newFarmInfo.poolId].name ;
 
                     let responseData
                     try{
@@ -1477,7 +1477,7 @@ export default Vue.extend({
     border-bottom:none !important;
     position:relative;
     margin:0 10px 20px 10px;
-    background:#1B2028;
+    background:#646D82;
 
     .banner{
       height:100px;
@@ -1565,7 +1565,7 @@ div.inputContent{
     border:none;
     padding:9px 10px;
     border-radius:5px 0 0 5px;
-    background:#1B2028;
+    background:#646D82;
     width: 293px; 
   }
 
@@ -1606,7 +1606,7 @@ div.inputContent{
   }
 
   .airdropWinner{
-    color:#13ECAB;
+    color:#6f7990;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -1622,7 +1622,7 @@ div.inputContent{
   }
 
   .nftWinner{
-    color:#13ECAB;
+    color:#6f7990;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -1656,7 +1656,7 @@ div.inputContent{
   }
 
    .followerscount span{
-      color:#13ECAB
+      color:#6f7990
     }
 
    .followerscount img{
@@ -1816,7 +1816,7 @@ div.inputContent{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #13ECAB;
+    color: #6f7990;
 
     img{
       max-width:20px;
@@ -1831,7 +1831,7 @@ div.inputContent{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #13ECAB;
+    color: #6f7990;
     margin-right:15px;
 
     img{
@@ -1882,7 +1882,7 @@ div.inputContent{
   width: 500px;
   margin-top: 30px;
   background-color: transparent;
-  border: 1px solid #85858d;
+  border: 1px solid #22252b;
 
   .anticon-close {
     color: #fff;
@@ -1996,7 +1996,7 @@ main{
 
 .farm.container {
   max-width: 1200px;
-  background: #1B2028;
+  background: #646D82;
   margin-top:20px;
   margin-bottom:20px;
 

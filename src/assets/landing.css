@@ -159,7 +159,7 @@ body .landing{
     display: flex;
     margin-right: 44px;
     margin-top: 32px;
-    background: linear-gradient(94.52deg, #C834F7 0%, #13ECAB 98.2%);
+    background: linear-gradient(94.52deg, #C834F7 0%, #6f7990 98.2%);
     border-radius: 13px;
     padding: 0;
     cursor:pointer
@@ -292,7 +292,7 @@ h1 {
 }
 
 #btn-LA {
-    background: linear-gradient(273.22deg, #13ECAB 4.19%, #C834F7 95.92%);
+    background: linear-gradient(273.22deg, #6f7990 4.19%, #C834F7 95.92%);
     padding: 3px;
     width: 164px;
     height: 47px;
@@ -317,7 +317,7 @@ h1 {
 }
 
 #btn-RM {
-    background: linear-gradient(273.22deg, #C834F7 4.19%, #13ECAB 95.92%);
+    background: linear-gradient(273.22deg, #C834F7 4.19%, #6f7990 95.92%);
     padding: 3px;
     width: 164px;
     height: 47px;
@@ -435,7 +435,7 @@ h1 {
 }
 
 #btn-LA {
-    background: linear-gradient(273.22deg, #13ECAB 4.19%, #C834F7 95.92%);
+    background: linear-gradient(273.22deg, #6f7990 4.19%, #C834F7 95.92%);
     padding: 3px;
     width: 164px;
     height: 47px;
@@ -468,7 +468,7 @@ h1 {
 }
 
 #btn-RM {
-    background: linear-gradient(273.22deg, #C834F7 4.19%, #13ECAB 95.92%);
+    background: linear-gradient(273.22deg, #C834F7 4.19%, #6f7990 95.92%);
     padding: 3px;
     width: 164px;
     height: 47px;

@@ -85,9 +85,9 @@
               >$$
             </div>
             <div>Input Serum Market ID:</div>
-            <div>CRP/USDC: HPU7v2yCGM6sRujWEMaTPiiiX2qMb6fun3eWjTzSgSw1</div>
-            <div>CRP/USDT: 3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG</div>
-            <div>B2B/CRP: 2hEeVE354k6mpvHvzg8K8HvEAkL9HUMiZbcjarkuy7W7</div>
+            <div>STR/USDC: 5P3giWpPBrVKL8QP8roKM7NsLdi3ie1Nc2b5r9mGtvwb</div>
+            <div>STR/USDT: 3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG</div>
+            <div>B2B/STR: 2hEeVE354k6mpvHvzg8K8HvEAkL9HUMiZbcjarkuy7W7</div>
           </Col>
           <Col style="line-height: 20px" :span="24"><input v-model="inputMarket" :disabled="!marketInputFlag" /></Col>
 
@@ -260,7 +260,7 @@
 
         <!-- Create Farm -->
         <Row v-if="current === 5" style="align-items: baseline; line-height: 40px; padding-bottom: 20px">
-          <Col v-if="!isCRPTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
+          <Col v-if="!isSTRTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
             <div>If you have associated your token with USDC, you will need to pay 5000 USDC to start the farm after it is created</div>
           </Col>
           <Col style="line-height: 20px" :span="24">
@@ -326,7 +326,7 @@
           </Col>
         </Row>
         <Row v-if="current === 6" style="align-items: baseline; line-height: 40px; padding-bottom: 20px">
-          <Col v-if="!isCRPTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
+          <Col v-if="!isSTRTokenPair" style="line-height: 20px" :span="24" :class="isMobile ? 'item-title-mobile' : 'item-title'">
             <div>Farm has been successfully created!</div>
           </Col>
           <Col :span="isMobile ? 24 : 24" style="padding-bottom: 20px; padding-top: 10px; text-align:center">
@@ -370,7 +370,7 @@ declare const window: any;
 
 @Component({
   head: {
-    title: 'CropperFinance Create Pool'
+    title: 'Stream Protocol Create Pool'
   },
   components: {
     Steps,
@@ -397,7 +397,7 @@ export default class CreatePool extends Vue {
   startTime: any = moment()
   endTime:  any = moment()
   endOpen: any = false
-  isCRPTokenPair:boolean = false
+  isSTRTokenPair:boolean = false
   ammIdSelectShow:boolean = false
   ammIdSelectList: any = []
   
@@ -405,7 +405,7 @@ export default class CreatePool extends Vue {
   
   marketInputFlag: boolean = true
   marketFlag: boolean = false
-  inputMarket: string = '' //'HPU7v2yCGM6sRujWEMaTPiiiX2qMb6fun3eWjTzSgSw1'//3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG
+  inputMarket: string = '' //'5P3giWpPBrVKL8QP8roKM7NsLdi3ie1Nc2b5r9mGtvwb'//3iCYi5bQxXN5X4omCxME1jj9D91vNpYYqzbiSw9u7tcG
   isAmountValid:boolean = false
   inputQuoteValue: number | null = null
   inputBaseValue: number | null = null

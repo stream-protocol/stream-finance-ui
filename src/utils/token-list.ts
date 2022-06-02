@@ -532,9 +532,9 @@ const TOKENSBASE_MAINNET_BETA: Tokens = {
     referrer: 'CijuvE6qDpxZ5WqdEQEe7mS11fXEKiiHc7RR8wRiGzjY',
     tags: ['cropper']
   },
-  CRP: {
-    symbol: 'CRP',
-    name: 'CRP',
+  STR: {
+    symbol: 'STR',
+    name: 'STR',
     mintAddress: 'DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz',
     decimals: 9,
     referrer: 'FKocyVJptELTbnkUkDRmT7y6hUem2JYrqHoph9uyvQXt',
@@ -1346,9 +1346,9 @@ export const LP_TOKENSBASE: Tokens = {
 }
 
 const TOKENSBASE_DEVNET: Tokens = {
-  CRP: {
-    symbol: 'CRP',
-    name: 'CRP',
+  STR: {
+    symbol: 'STR',
+    name: 'STR',
     // mintAddress : '67P8nMeC7dbqBVeJNRMfAj1Js8XZEPUhch9F7gVNH1nX',
     mintAddress: 'GGaUYeET8HXK34H2D1ieh4YYQPhkWcfWBZ4rdp6iCZtG',
     // decimals: 6,

@@ -383,7 +383,7 @@ export async function twoStepSwap(
     crpTokenAccount = (await createAssociatedTokenAccountIfNotExist(
       crpTokenAccount,
       wallet.publicKey,
-      TOKENS.CRP.mintAddress,
+      TOKENS.STR.mintAddress,
       transaction
     )).toString()
     await sendTransaction(connection, wallet, transaction, [])
@@ -394,7 +394,7 @@ export async function twoStepSwap(
     wallet,
     fromPoolInfo,
     fromCoinMint,
-    TOKENS.CRP.mintAddress,
+    TOKENS.STR.mintAddress,
     fromTokenAccount,
     crpTokenAccount,
     aIn,
@@ -411,7 +411,7 @@ export async function twoStepSwap(
     }
   }
 
-  let crp_decimals = await getMintDecimals(connection, new PublicKey(TOKENS.CRP.mintAddress))
+  let crp_decimals = await getMintDecimals(connection, new PublicKey(TOKENS.STR.mintAddress))
   let delta_crp = cur_crp_balance - ori_crp_balance
   
   let aCrpIn = (new TokenAmount(delta_crp, crp_decimals)).fixed()
@@ -419,7 +419,7 @@ export async function twoStepSwap(
   let tx_id_2 = await swap(connection, 
     wallet,
     toPoolInfo,
-    TOKENS.CRP.mintAddress,
+    TOKENS.STR.mintAddress,
     toCoinMint,
     crpTokenAccount,
     toTokenAccount,

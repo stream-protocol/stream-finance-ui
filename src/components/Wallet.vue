@@ -11,7 +11,7 @@
     <div class="btncontainer" v-else ghost @click="$accessor.wallet.openModal">
     <Button>
       <Icon type="wallet" />
-        {{ "6vdC" }}
+        {{ "strm" }}
             ...
         {{ "F4cN" }}
     </Button>
@@ -537,7 +537,7 @@ export default class Wallet extends Vue {
 @import '../styles/variables';
 
 .ant-modal-content {
-  background-color: #1B2028;
+  background-color: #646D82;
 
   .ant-modal-close {
     color: @text-color;
@@ -587,10 +587,10 @@ header .btncontainer {
 
 
   .ant-modal-header{
-    background-color: #1B2028;
+    background-color: #646D82;
   }
   .ant-modal-title{
-    background-color: #1B2028;
+    background-color: #646D82;
     text-align:center
   }
 

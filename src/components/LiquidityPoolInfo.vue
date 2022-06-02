@@ -98,7 +98,7 @@ export default Vue.extend({
       margin-left: 10px;
       padding: 5px;
       border-radius: 50%;
-      background: #000829;
+      background: #16181D;
     }
   }
 }

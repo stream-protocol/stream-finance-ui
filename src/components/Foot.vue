@@ -22,7 +22,7 @@
     </div>
     <div class="foot-line"></div>
     <div :class="isMobile ? 'mobile foot-refer' : 'pc foot-refer'">
-      <label>Decentralized 2021</label>
+      <label>@ 2022 Stream Protocol LLC. All Rights Reserved</label>
       <div class="refer-list">
         <label>Terms & Conditions</label>
         <label>Privacy Policy</label>
@@ -48,10 +48,10 @@ export default class Foot extends Vue {
   linkUrl = {
     home: '/',
     app: '/swap/',
-    twitter: 'https://twitter.com/CropperFinance',
-    discord: 'https://discord.gg/CropperFinance',
-    telegram: 'https://t.me/CropperFinance',
-    medium: 'https://cropperfinance.medium.com/'
+    twitter: 'https://twitter.com/stream_protocol',
+    discord: 'https://discord.gg/4nAFaZGm',
+    telegram: 'https://t.me/stream_rotocol',
+    medium: 'https://streamprotocol.medium.com/'
   }
 
   get isMobile() {
@@ -70,7 +70,7 @@ export default class Foot extends Vue {
     text-align: center;
     margin: 48px 0;
     a {
-      color: #505F8C !important;
+      color: #596173 !important;
     }
   }
 }
@@ -87,7 +87,7 @@ export default class Foot extends Vue {
     letter-spacing: -0.05em;
     text-align: left;
     a {
-      color: #505F8C !important;
+      color: #596173 !important;
       font-size: 18px;
       padding-right: 5px;
       margin-left: 55.81px;
@@ -107,7 +107,7 @@ export default class Foot extends Vue {
 }
 
 .foot-refer {
-  color: #505F8C !important;
+  color: #596173 !important;
   // font-family: Gilroy;
   font-size: 18px;
   font-style: normal;

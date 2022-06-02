@@ -102,7 +102,7 @@ export default Vue.extend({
   },
 
   head: {
-    title: 'CropperFinance Farm'
+    title: 'Stream Protocol Farm'
   },
 
   computed: {
@@ -401,7 +401,7 @@ export default Vue.extend({
   width: 500px;
   margin-top: 30px;
   background-color: transparent;
-  border: 1px solid #85858d;
+  border: 1px solid #22252b;
 
   .anticon-close {
     color: #fff;
@@ -412,7 +412,7 @@ export default Vue.extend({
 
 .fertilizer.cont {
   max-width: calc(100% - 80px);
-  background: #1B2028;
+  background: #646D82;
   margin-left:auto;
   margin-right:auto;
   margin-top:20px;

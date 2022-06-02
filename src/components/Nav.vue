@@ -124,7 +124,7 @@ export default class Nav extends Vue {
 }
 
 .itemRact {
-  border: 2px solid #724CEE;
+  border: 2px solid #596173;
   box-sizing: border-box;
   border-radius: 4px;
   height: 12px;
@@ -137,13 +137,13 @@ export default class Nav extends Vue {
 // }
 
 .itemRact:nth-child(2) {
-  background: #724CEE;
-  border: 2px solid #724CEE;
+  background: #596173;
+  border: 2px solid #596173;
 }
 
 .itemRact:nth-child(3) {
-  background: #EF745D;
-  border: 2px solid #EF745D;
+  background: #6f7990;
+  border: 2px solid #6f7990;
 }
 
 .itemRact:nth-child(4) {
@@ -152,8 +152,8 @@ export default class Nav extends Vue {
 }
 
 .ant-menu-horizontal > .ant-menu-item-selected > .itemContainer > .itemRact {
-  background: #724CEE;
-  border: 2px solid #724CEE;
+  background: #596173;
+  border: 2px solid #596173;
   box-sizing: border-box;
   border-radius: 4px;
   height: 12px;

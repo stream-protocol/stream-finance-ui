@@ -241,7 +241,7 @@ export default Vue.extend({
       background: #01033C;
       border-radius: 8px;
       border: 2px solid;
-      border-color: linear-gradient(97.63deg, #280C86 -29.92%, #22B5B6 103.89%);
+      border-color: linear-gradient(97.63deg, #4e5565 -29.92%, #373c48 103.89%);
       width: 120px;
 
       .anticon {

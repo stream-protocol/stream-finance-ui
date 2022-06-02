@@ -428,7 +428,7 @@ export default Vue.extend({
   width: 100%;
 }
 .source-manager:hover {
-  color: #5ac4be;
+  color: #4e5565;
 }
 
 .nodisplay{

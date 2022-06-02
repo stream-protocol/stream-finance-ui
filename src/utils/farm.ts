@@ -26,14 +26,14 @@ import { TokenAmount } from './safe-math';
 export const PAY_FARM_FEE = 5000;
 
 export const LOCKED_TOKENA_LIST = [
-  "CRP",
+  "STR",
   "USDC",
   "USDT",
   "SOL",
   "ETH"
 ]
 export const ALLOWED_TOKENB_LIST = [
-  "CRP",
+  "STR",
   "USDC",
 ]
 enum FarmInstruction

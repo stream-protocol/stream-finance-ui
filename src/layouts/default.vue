@@ -112,7 +112,7 @@ export default class Default extends Vue {
   width: 500px;
   margin-top: 30px;
   background-color: transparent;
-  border: 1px solid #85858d;
+  border: 1px solid #22252b;
 
   .anticon-close {
     color: #fff;

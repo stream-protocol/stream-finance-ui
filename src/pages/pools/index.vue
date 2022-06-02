@@ -704,7 +704,7 @@ section{
 
 .pool.container {
   max-width: 1200px;
-  background: #1B2028;
+  background: #646D82;
   margin-top:20px;
   margin-bottom:20px;
 

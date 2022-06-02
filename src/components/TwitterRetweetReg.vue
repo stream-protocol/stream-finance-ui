@@ -28,27 +28,27 @@
 
                 <div :class="this.twitterA ? 'notdone' : 'notdone' " >
                     <span v-if="!this.twitterA" class="first">1</span>
-                    <span v-else class="span first"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span first"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>
-                      <a href="https://twitter.com/CropperFinance" target="_blank" @click="validateTwitterA()" >
+                      <a href="https://twitter.com/Stream Protocol" target="_blank" @click="validateTwitterA()" >
                         <img src="@/assets/icons/twitter.svg" width="40" height="40" />
-                      </a> Follow <b>CropperFinance</b> on Twitter</div>
+                      </a> Follow <b>Stream Protocol</b> on Twitter</div>
                 </div>
 
                 <div :class="this.telegramA ? 'notdone' : 'notdone' ">
                     <span v-if="!this.telegramA">2</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>
-                      <a href="https://t.me/CropperFinance" target="_blank" @click="validateTelegramA()" >
+                      <a href="https://t.me/Stream Protocol" target="_blank" @click="validateTelegramA()" >
                         <img src="@/assets/icons/telegram.svg" width="40" height="40" />
                       </a>
-                      Join <b>CropperFinance</b> on Telegram</div>
+                      Join <b>Stream Protocol</b> on Telegram</div>
                 </div>
 
 
                 <div v-if="this.farm.links.twitter" :class="this.twitterB ? 'notdone' : 'notdone' " >
                     <span v-if="!this.twitterB">3</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>
                       <a :href="this.farm.links.twitter" target="_blank" @click="validateTwitterB()" >
                         <img src="@/assets/icons/twitter.svg" width="40" height="40" />
@@ -57,7 +57,7 @@
 
                 <div v-if="this.farm.links.telegram" :class="this.telegramB ? 'notdone' : 'notdone' " >
                     <span v-if="!this.telegramB">4</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>
                       <a :href="this.farm.links.telegram" target="_blank" @click="validateTelegramB()" >
                         <img src="@/assets/icons/telegram.svg" width="40" height="40" />
@@ -67,7 +67,7 @@
 
                 <div :class="this.inputtwitter ? 'notdone' : 'notdone' ">
                     <span v-if="!this.inputtwitter">{{this.farm.links.twitter ? 5 : 3}}</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span> 
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span> 
                     <div>Input your twitter ID 
                       <div>
                         <span class="inputContent">
@@ -80,7 +80,7 @@
 
                 <div :class="this.inputtelegram ? 'notdone' : 'notdone' ">
                     <span v-if="!this.inputtelegram">{{this.farm.links.twitter ? 6 : 4}}</span>
-                    <span v-else class="span"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>Input your telegram ID 
                       <div>
                         <span class="inputContent">
@@ -145,7 +145,7 @@
 
                 <div :class="this.inputretwit ? 'notdone big' : 'notdone big' " >
                     <span v-if="!this.inputretwit" class="first">1</span>
-                    <span v-else class="span2 first"><img src="https://cropper.finance/distant/check-one.png?t=1" alt=""></span>
+                    <span v-else class="span2 first"><img src="https://finance.streamprotocol.org/distant/check-one.png?t=1" alt=""></span>
                     <div>
 
 
@@ -154,7 +154,7 @@ and using the #CropperFiance #Fertilizer</div>
 
                     <div>
 
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">👨🏻‍🌾 Dear Croppers,<br><br>📣 We’re excited to announce our Farm Launcher’s hero feature. <br><br>🎉 Introducing a feature that celebrates DeFi innovation while rewarding farmers. <br><br>🤝 Meet <a href="https://twitter.com/hashtag/Fertilizer?src=hash&amp;ref_src=twsrc%5Etfw">#Fertilizer</a>🧪<a href="https://t.co/BeuvL2aUbz">https://t.co/BeuvL2aUbz</a></p>&mdash; CropperFinance (@CropperFinance) <a href="https://twitter.com/CropperFinance/status/1443533161913372672?ref_src=twsrc%5Etfw">September 30, 2021</a></blockquote> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">👨🏻‍🌾 Dear Croppers,<br><br>📣 We’re excited to announce our Farm Launcher’s hero feature. <br><br>🎉 Introducing a feature that celebrates DeFi innovation while rewarding farmers. <br><br>🤝 Meet <a href="https://twitter.com/hashtag/Fertilizer?src=hash&amp;ref_src=twsrc%5Etfw">#Fertilizer</a>🧪<a href="https://t.co/BeuvL2aUbz">https://t.co/BeuvL2aUbz</a></p>&mdash; Stream Protocol (@Stream Protocol) <a href="https://twitter.com/Stream Protocol/status/1443533161913372672?ref_src=twsrc%5Etfw">September 30, 2021</a></blockquote> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
 
                   <div class="twitter-link">
@@ -417,7 +417,7 @@ span.inputContent{
     border:none;
     padding:4px 10px;
     border-radius:5px 0 0 5px;
-    background:#1B2028;
+    background:#646D82;
     width: 230px; 
   }
 

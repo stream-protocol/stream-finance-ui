@@ -63,7 +63,7 @@ export const actions = actionTree(
       );
       //for hongbo's test
       if(DEVNET_MODE){
-        prices["CRP"]=0.32
+        prices["STR"]=0.32
         prices["B2B"]=2.24
       }
       

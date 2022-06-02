@@ -115,7 +115,7 @@
                       <p>Swaping via multistep scenario</p>
                     </div>
                     <div v-if="swaptype == 'multi'" class="info">
-                      <div class="symbol">{{fromCoin.symbol + " - CRP"}}</div>
+                      <div class="symbol">{{fromCoin.symbol + " - STR"}}</div>
                       <div class="address">
                         {{ mainAmmId ? mainAmmId.substr(0, 14) : '' }}
                         ...
@@ -130,7 +130,7 @@
                     </div>
                     <div v-if="swaptype == 'multi'" class="info">
                     
-                      <div class="symbol">{{"CRP - " + toCoin.symbol}}</div>
+                      <div class="symbol">{{"STR - " + toCoin.symbol}}</div>
                       <div class="address">
                         {{ extAmmId ? extAmmId.substr(0, 14) : '' }}
                         ...
@@ -256,8 +256,8 @@
             >
               <span>
                 1 SLIM ≈
-                {{ 2.4985 }}
-                CRP
+                {{ 0.15 }}
+                STR
                 <Icon type="swap" @click="() => (hasPriceSwapped = !hasPriceSwapped)" />
               </span>
             </div>
@@ -520,7 +520,7 @@ import {
   LiquidityPoolInfo
 } from '@/utils/pools'
 
-const CRP = getTokenBySymbol('CRP')
+const STR = getTokenBySymbol('STR')
 
 export default Vue.extend({
   components: {
@@ -564,7 +564,7 @@ export default Vue.extend({
       selectFromCoin: true,
       fixedFromCoin: true,
 
-      fromCoin: CRP as TokenInfo | null,
+      fromCoin: STR as TokenInfo | null,
       toCoin: null as TokenInfo | null,
       fromCoinAmount: '',
       toCoinAmount: '',
@@ -616,7 +616,7 @@ export default Vue.extend({
   },
 
   head: {
-    title: 'CropperFinance Swap'
+    title: 'Stream Protocol Swap'
   },
 
   computed: {
@@ -1001,11 +1001,11 @@ export default Vue.extend({
           else {
             const lpList_1 = getPoolListByTokenMintAddresses(
               this.fromCoin.mintAddress === TOKENS.WSOL.mintAddress ? NATIVE_SOL.mintAddress : this.fromCoin.mintAddress,
-              TOKENS.CRP.mintAddress,
+              TOKENS.STR.mintAddress,
               undefined
             )
             const lpList_2 = getPoolListByTokenMintAddresses(
-              TOKENS.CRP.mintAddress,
+              TOKENS.STR.mintAddress,
               this.toCoin.mintAddress === TOKENS.WSOL.mintAddress ? NATIVE_SOL.mintAddress : this.toCoin.mintAddress,
               undefined
             )
@@ -1111,29 +1111,29 @@ export default Vue.extend({
             ).fixed()
             impact = priceImpact
             if(poolInfo.version == 5)
-              endpoint = 'CropperFinance Pool'
+              endpoint = 'Stream Protocol Pool'
             else
               endpoint = 'Raydium Pool'
           }
         }
         else if(this.swaptype == 'multi'){
-          const fromPoolInfo = findBestLP(this.$accessor.liquidity.infos, this.fromCoin.mintAddress, TOKENS.CRP.mintAddress,this.fromCoinAmount)
+          const fromPoolInfo = findBestLP(this.$accessor.liquidity.infos, this.fromCoin.mintAddress, TOKENS.STR.mintAddress,this.fromCoinAmount)
           this.mainAmmId = fromPoolInfo.ammId
 
           let { amountOut, amountOutWithSlippage, priceImpact } = getSwapOutAmount(
             fromPoolInfo,
             this.fromCoin.mintAddress,
-            TOKENS.CRP.mintAddress,
+            TOKENS.STR.mintAddress,
             this.fromCoinAmount,
             this.setting.slippage
           )
 
-          const toPoolInfo = findBestLP(this.$accessor.liquidity.infos, TOKENS.CRP.mintAddress, this.toCoin.mintAddress, amountOut.fixed())
+          const toPoolInfo = findBestLP(this.$accessor.liquidity.infos, TOKENS.STR.mintAddress, this.toCoin.mintAddress, amountOut.fixed())
           this.extAmmId = toPoolInfo.ammId
          
           let final = getSwapOutAmount(
             toPoolInfo,
-            TOKENS.CRP.mintAddress,
+            TOKENS.STR.mintAddress,
             this.toCoin.mintAddress,
             amountOut.fixed(),
             this.setting.slippage
@@ -1150,7 +1150,7 @@ export default Vue.extend({
               false
             ).fixed()
             impact = final.priceImpact
-            endpoint = 'CropperFinance Pool'
+            endpoint = 'Stream Protocol Pool'
           }
         }
       }
@@ -1275,7 +1275,7 @@ export default Vue.extend({
           .finally(() => {
             this.swaping = false
           })
-      } else if ((this.endpoint === 'CropperFinance Pool' || this.endpoint === 'Raydium Pool') && this.swaptype == 'single') {
+      } else if ((this.endpoint === 'Stream Protocol Pool' || this.endpoint === 'Raydium Pool') && this.swaptype == 'single') {
         const poolInfo = Object.values(this.$accessor.liquidity.infos).find((p: any) => p.ammId === this.mainAmmId)
         swap(
           this.$web3,
@@ -1317,7 +1317,7 @@ export default Vue.extend({
           .finally(() => {
             this.swaping = false
           })
-      }else if(this.endpoint === 'CropperFinance Pool' && this.swaptype == 'multi') {
+      }else if(this.endpoint === 'Stream Protocol Pool' && this.swaptype == 'multi') {
         const fromPoolInfo = Object.values(this.$accessor.liquidity.infos).find((p: any) => p.ammId === this.mainAmmId)
         const toPoolInfo = Object.values(this.$accessor.liquidity.infos).find((p: any) => p.ammId === this.extAmmId)
         twoStepSwap(
@@ -1333,7 +1333,7 @@ export default Vue.extend({
           // @ts-ignore
           get(this.wallet.tokenAccounts, `${this.fromCoin.mintAddress}.tokenAccountAddress`),
           // @ts-ignore
-          get(this.wallet.tokenAccounts, `${TOKENS.CRP.mintAddress}.tokenAccountAddress`),
+          get(this.wallet.tokenAccounts, `${TOKENS.STR.mintAddress}.tokenAccountAddress`),
           // @ts-ignore
           get(this.wallet.tokenAccounts, `${this.toCoin.mintAddress}.tokenAccountAddress`),
           this.fromCoinAmount,
@@ -1352,10 +1352,10 @@ export default Vue.extend({
                 ])
             })
 
-            const description_1 = `Swap ${this.fromCoinAmount} ${this.fromCoin?.symbol} to ${this.crpAmountWithSlippage} ${TOKENS.CRP.symbol}`
+            const description_1 = `Swap ${this.fromCoinAmount} ${this.fromCoin?.symbol} to ${this.crpAmountWithSlippage} ${TOKENS.STR.symbol}`
             this.$accessor.transaction.sub({ txid:txids[0], description:description_1 })
             
-            const description = `Swap ${this.crpAmountWithSlippage} ${TOKENS.CRP.symbol} to ${this.toCoinAmount} ${this.toCoin?.symbol}`
+            const description = `Swap ${this.crpAmountWithSlippage} ${TOKENS.STR.symbol} to ${this.toCoinAmount} ${this.toCoin?.symbol}`
             this.$accessor.transaction.sub({ txid:txids[0], description })
 
           })
@@ -1573,7 +1573,7 @@ main{
 }
 
 .btn-grad {
-  background: linear-gradient(315deg, #21BDB8 0%, #280684 100%);
+  background: linear-gradient(315deg, #596173 0%, #434956 100%);
   border: 2px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   height: 60px;
@@ -1632,7 +1632,7 @@ main{
         width: 52px;
         height: 52px;
         border-width: 0;
-        background: linear-gradient(315deg, #21BDB8 0%, #280684 100%);
+        background: linear-gradient(315deg, #596173 0%, #434956 100%);
         border-radius: 25px;
       }
     }
@@ -1657,7 +1657,7 @@ main{
     .anticon-swap {
       margin-left: 10px;
       padding: 5px;
-      background: #000829;
+      background: #16181D;
     }
     .price-base {
       line-height: 24px;
@@ -1678,10 +1678,10 @@ main{
       }
       .swapThrough {
         text-transform: capitalize;
-        border: solid 2px #0CAF7F;
+        border: solid 2px #646d82;
         border-radius: 5px;
         padding: 0 7px;
-        background: #0CAF7F;
+        background: #646d82;
       }
     }
   }
@@ -1699,7 +1699,7 @@ main{
     border-radius: 8px;
 
     button{
-      background: linear-gradient(315deg, #21BDB8 0%, #280684 100%) !important;
+      background: linear-gradient(315deg, #596173 0%, #434956 100%) !important;
       position: relative;
       border-radius: 8px;
       border-color: transparent;
