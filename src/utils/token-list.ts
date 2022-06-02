@@ -540,6 +540,14 @@ const TOKENSBASE_MAINNET_BETA: Tokens = {
     referrer: 'FKocyVJptELTbnkUkDRmT7y6hUem2JYrqHoph9uyvQXt',
     tags: ['cropper']
   },
+    STRM: {
+    symbol: 'STRM',
+    name: 'Stream Protocol',
+    mintAddress: '5P3giWpPBrVKL8QP8roKM7NsLdi3ie1Nc2b5r9mGtvwb',
+    decimals: 9,
+    referrer: '6NeHPXG142tAE2Ej3gHgT2N66i1KH6PFR6PBZw6RyrwH',
+    tags: ['cropper']
+  },
   ATLAS: {
     symbol: 'ATLAS',
     name: 'ATLAS',
