@@ -61,7 +61,7 @@ export const actions = actionTree(
           prices[value['symbol']] = value['price']
         }
       );
-      //for hongbo's test
+      //for Protocol's test
       if(DEVNET_MODE){
         prices["STR"]=0.15
         prices["B2B"]=0.20
