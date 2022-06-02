@@ -1,9 +1,9 @@
 import { getterTree, mutationTree, actionTree } from 'typed-vuex'
 
 export const state = () => ({
-  trading: 'https://dex.cropper.finance',
+  trading: 'https://dex.streamprotocol.org',
   explorer: 'https://solscan.io',
-  trade: 'https://dex.cropper.finance/#/market',
+  trade: 'https://dex.streamprotocol.org/#/market',
   whitelist : '#'
 })
 

@@ -2,7 +2,7 @@ import { PublicKey } from '@solana/web3.js'
 
 export const DEVNET_MODE = true;
 
-export const FIXED_FEE_ACCOUNT = new PublicKey('2Pv5mjmKYAtXNpr3mcsXf7HjtS3fieJeFoWPATVT5rWa')
+export const FIXED_FEE_ACCOUNT = new PublicKey('A7gEhi6kDzieGKjn3a3G5QZgbM3WyAfM9psKBhAbs3Yt')
 
 export const SYSTEM_PROGRAM_ID = new PublicKey('11111111111111111111111111111111')
 export const TOKEN_PROGRAM_ID = new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA')
@@ -23,8 +23,8 @@ export const LIQUIDITY_POOL_PROGRAM_ID_V4 = '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24
 
 export const LIQUIDITY_POOL_PROGRAM_ID_V5 = '7ZZJNL4xD8db6yrT46SeMFZXcVr9MLepGpEtnKW2k6sW'//@zhaohui
 
-export const FARM_PROGRAM_ID = '8cWgU2JinvsgYH4AdKMEKENgowhuRoyfoAqeQjDBEECL'//@Hongbo
-export const SITE_ALLOWED_CREATOR = "4GJ3z4skEHJADz3MVeNYBg4YV8H27rBQey2YYdiPC8PA";
+export const FARM_PROGRAM_ID = '52JJRLoSNWYBxq76uyQAAB5Dycwv3J7f8L1f4TSfFcub'//@Hongbo
+export const SITE_ALLOWED_CREATOR = "52JJRLoSNWYBxq76uyQAAB5Dycwv3J7f8L1f4TSfFcub";
 
 export const STAKE_PROGRAM_ID = 'EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q'
 export const STAKE_PROGRAM_ID_V4 = 'CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T'
